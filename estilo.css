@@ -19,7 +19,7 @@ h1{
 
 /* FORMATÇÃO DO SCRIPT */
 
-#popup{
+#popup2{
     display: none;
     overflow: auto;
     position: fixed;
@@ -30,12 +30,12 @@ h1{
     padding: 30px 10px;
     box-sizing: border-box;
 }
-#texto-subtitulo:after{
+#texto-subtitulo2:after{
     content: 'Clique No Anuncio 👇👇👇 Para Desbloquear';
     display: block;
     color: red;
 }
-#area-ad{
+#area-ad2{
     height: 300px;
     width: 100%;
     background-color: #ccc;
@@ -48,13 +48,13 @@ a.baixar{
     padding: 5px 0px;
     margin: 20px 0px;
 }
-#os-links{
+#os-links2{
     display: none;
 }
-#escreva-aqui{
+#escreva-aqui2{
     color: green;
 }
-#fechar-popup{
+#fechar-popup2{
     position: absolute;
     right: 20px;
     border: none;

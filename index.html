@@ -13,17 +13,18 @@
     </header>
     <main>
         <h2>Faça o download do arquivo abaixo</h2>
-        <button id="btn-download">Download Aqui</button>
+        
+        <button id="btn-download2">Download Aqui</button>
 
 
-        <div id="popup">
-            <button id="fechar-popup">x</button>
-            <h3 id="texto-subtitulo">Download Bloqueado!</h3>
-            <h3 id="escreva-aqui"></h3>
-            <div id="area-ad">
-                Anuncios Aqui
+        <div id="popup2">
+            <button id="fechar-popup2">x</button>
+            <h3 id="texto-subtitulo2">Download Bloqueado!</h3>
+            <h3 id="escreva-aqui2"></h3>
+            <div id="area-ad2">
+                [the_ad id="6368"]
             </div>
-            <div id="os-links">
+            <div id="os-links2">
 
                 <a class="baixar" href="#" target="_blank">Baixar primário</a>
                 <a class="baixar" href="#" target="_blank">Baixar secundário</a>
@@ -31,26 +32,26 @@
 
 
             <script>
-                var botaoDownload = document.getElementById('btn-download');
-                var chamarPopup = document.getElementById('popup');
-                var botaoFechar = document.getElementById('fechar-popup');
-                var cliqueAds = document.getElementById('area-ad');
-                var osLinks = document.getElementById('os-links');
-                var h3Texto = document.getElementById('texto-subtitulo');
-                var h3Escreva = document.getElementById('escreva-aqui');
-                botaoDownload.addEventListener('click', mostrarPopup);
-                function mostrarPopup(){
-                    chamarPopup.style.display='block';
+                var botaoDownload2 = document.getElementById('btn-download2');
+                var chamarPopup2 = document.getElementById('popup2');
+                var botaoFechar2 = document.getElementById('fechar-popup2');
+                var cliqueAds2 = document.querySelector('#area-ad2');
+                var osLinks2 = document.getElementById('os-links2');
+                var h3Texto2 = document.getElementById('texto-subtitulo2');
+                var h3Escreva2 = document.getElementById('escreva-aqui2');
+                botaoDownload2.addEventListener('click', mostrarPopup2);
+                function mostrarPopup2(){
+                    chamarPopup2.style.display='block';
                 }
-                botaoFechar.addEventListener('click', fecharPopup);
-                function fecharPopup(){
-                    chamarPopup.style.display='none';
+                botaoFechar2.addEventListener('click', fecharPopup2);
+                function fecharPopup2(){
+                    chamarPopup2.style.display='none';
                 }
-                cliqueAds.addEventListener('click', liberarLinks);
+                cliqueAds2.addEventListener('click', liberarLinks);
                 function liberarLinks(){
-                    osLinks.style.display=('block');
-                    h3Texto.style.display=('none');
-                    h3Escreva.innerHTML=('Parabéns Seu Download Está Liberado!');
+                    osLinks2.style.display=('block');
+                    h3Texto2.style.display=('none');
+                    h3Escreva2.innerHTML=('Parabéns Seu Download Está Liberado!');
                 }
                 
             </script>
