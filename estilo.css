@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+header{
+    background-color: #3f3f3f;
+    color: white;
+    box-sizing: border-box;
+    height: 70px;
+    padding: 10px;
+    margin: -8px;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+/* FORMATÇÃO DO SCRIPT */
+
+#popup{
+    display: none;
+    position: fixed;
+    z-index: 16998999900099;
+    top: 0; left: 0;
+    background-color: white;
+    height: 100vh; width: 100%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+#texto-subtitulo:after{
+    content: 'Clique No Anuncio 👇👇👇 Para Desbloquear';
+    display: block;
+    color: red;
+}
+#area-ad{
+    height: 300px;
+    width: 100%;
+    background-color: #ccc;
+}
+a.baixar{
+    display: block;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0px;
+    margin: 20px 0px;
+}
+#os-links{
+    display: none;
+}
+#escreva-aqui{
+    color: green;
+}

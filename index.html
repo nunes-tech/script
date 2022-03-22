@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script de download</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Download</h1>
+    </header>
+    <main>
+        <h2>Faça o download do arquivo abaixo</h2>
+        <button id="btn-download">Download Aqui</button>
+
+
+        <div id="popup">
+            <button id="fechar-popup">x</button>
+            <h3 id="texto-subtitulo">Download Bloqueado!</h3>
+            <h3 id="escreva-aqui"></h3>
+            <div id="area-ad">
+                Anuncios Aqui
+            </div>
+            <div id="os-links">
+
+                <a class="baixar" href="#" target="_blank">Baixar primário</a>
+                <a class="baixar" href="#" target="_blank">Baixar secundário</a>
+            </div>
+
+
+            <script>
+                var botaoDownload = document.getElementById('btn-download');
+                var chamarPopup = document.getElementById('popup');
+                var botaoFechar = document.getElementById('fechar-popup');
+                var cliqueAds = document.getElementById('area-ad');
+                var osLinks = document.getElementById('os-links');
+                var h3Texto = document.getElementById('texto-subtitulo');
+                var h3Escreva = document.getElementById('escreva-aqui');
+                botaoDownload.addEventListener('click', mostrarPopup);
+                function mostrarPopup(){
+                    chamarPopup.style.display='block';
+                }
+                botaoFechar.addEventListener('click', fecharPopup);
+                function fecharPopup(){
+                    chamarPopup.style.display='none';
+                }
+                cliqueAds.addEventListener('click', liberarLinks);
+                function liberarLinks(){
+                    osLinks.style.display=('block');
+                    h3Texto.style.display=('none');
+                    h3Escreva.innerHTML=('Parabéns Seu Download Está Liberado!');
+                }
+                
+            </script>
+
+        </div>
+
+
+    </main>
+</body>
+</html>
