@@ -21,6 +21,7 @@ h1{
 
 #popup{
     display: none;
+    overflow: auto;
     position: fixed;
     z-index: 16998999900099;
     top: 0; left: 0;
@@ -52,4 +53,19 @@ a.baixar{
 }
 #escreva-aqui{
     color: green;
+}
+#fechar-popup{
+    position: absolute;
+    right: 20px;
+    border: none;
+    display: inline;
+    padding: 0;
+    border-radius: 50px;
+    color: white;
+    background-color: green;
+    font-weight: bolder;
+    font-size: 1.6em;
+    width: 40px;
+    height: 40px;
+    text-align: center;
 }
