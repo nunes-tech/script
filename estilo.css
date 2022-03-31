@@ -36,7 +36,8 @@ h1{
     color: red;
 }
 #area-ad2{
-    height: 300px;
+    height: auto;
+    padding: 20px 0;
     width: 100%;
     background-color: #ccc;
 }
